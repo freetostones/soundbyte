@@ -1,35 +1,6 @@
-console.log("started");
+console.log("started on options page");
 
-function openNew() {
-  //var newURL = "http://stackoverflow.com/";
-  chrome.tabs.create({ url: "/options.html" });
-};
-openNew();
-/*
-var stopButton = document.getElementById('stopButton');
-stopButton.addEventListener('click', function() {
-  openNew();
-});
-*/
 
-/*
-var newURL = "http://stackoverflow.com/";
-chrome.tabs.create({ url: newURL });
-
-chrome.tabs.getCurrent(function(activeTab) {
-  var constraints = {
-    audio: true,
-    video: false,
-  };
-
-  chrome.tabCapture.capture(constraints, function(stream) {
-    console.log("\ngot stream");
-    console.log(stream);
-  });
-});
-*/
-
-/*
 document.addEventListener('DOMContentLoaded', function() {
   //bg.console.log("DOM content loaded");
   console.log("DOM content loaded");
@@ -43,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navigator.getUserMedia({audio: true, video: false}, function(pStream) {
           stream = pStream;
-          //bg.console.log("Enter getUserMedia.");
           console.log("Enter getUserMedia.");
           
           // init recorders
@@ -52,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log("Successful initialization.");
 
           var startButton = document.getElementById('startButton');
-          startButton.addEventListener('click', function() {
+          startButton.click(function() {
             console.log('Clicked Start Button');
 
             
@@ -85,4 +55,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
   }
-});*/
+});

@@ -1,6 +1,6 @@
-function resetDefaultSuggestion() {
-  chrome.omnibox.setDefaultSuggestion({
-  description: 'dapi: Search the Drupal API for %s'
-  });
-}
-resetDefaultSuggestion();
+/*
+chrome.browserAction.onClicked.addListener(function(tab) {
+  var newURL = "http://stackoverflow.com/";
+  chrome.tabs.create({ url: newURL });
+});*/
+
